@@ -9,4 +9,11 @@ $ sudo pip install pillow
 $python nes_sprite.py mario.nes
 
 ## Output
+Mario
+
 ![mario-sprite](https://raw.githubusercontent.com/wiki/cyario/NESSpriteExtractor/sprite.png)
+
+
+Pacman
+
+![pacman-sprite](https://raw.githubusercontent.com/wiki/cyario/NESSpriteExtractor/sprite2.png)
