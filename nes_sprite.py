@@ -1,5 +1,6 @@
 import binascii
 import sys
+import math
 from PIL import Image
 
 NES_HEADER_SIZE = 0x0010;
@@ -25,11 +26,9 @@ chrRomPage = int(romHexList[5], 16)
 chrRomSart = NES_HEADER_SIZE + rpgRomPage * RPG_ROM_SIZE;
 spritesPerRow = CANVAS_WIDTH / 8;
 spritesNum = CHR_ROM_SIZE * chrRomPage / 16;
-rowNum = ~~(spritesNum / spritesPerRow) + 1;
-
+rowNum = spritesNum / spritesPerRow + 1;
 height = rowNum * 8;
 width = CANVAS_WIDTH
-
 
 def buildSprite(spriteNum):
 	sprite = [[0 for i in range(8)] for j in range(8)]
